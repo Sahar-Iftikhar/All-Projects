@@ -1,0 +1,76 @@
+<!-- Create a personal portfolio webpage that includes:
+A homepage with an introduction section, a list of projects, and a contact form.
+A "Projects" page detailing at least three projects with images and descriptions.
+A "Contact" page with a contact form.
+Use HTML for the structure and CSS for styling. Ensure the site is visually appealing and responsive. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>personal portfolio webpage</title>
+  <link rel="stylesheet" href="6secD.css">
+</head>
+<body>
+  <div class="header">
+    <h1>My portfolio</h1>
+    <p>A website created by me.</p>
+  </div>
+  
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#project">Project</a>
+    <a href="#aboutme">About Me</a>
+    <a href="#" class="right">Profile</a>
+  </div>
+
+  <section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p>I am a passionate developer with experience in various technologies. Here are some of my projects.</p>
+    <h3>Projects:</h3>
+    <ul>
+        <li><a href="#project1">Project 1</a></li>
+        <li><a href="#project2">Project 2</a></li>
+        <li><a href="#project3">Project 3</a></li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2 class="headings">My Projects</h2>
+    <div class="flex">
+        <div>
+            <h3 class="heading">Project 1</h3>
+            <img src="/api/placeholder/400/300" alt="Project 1" class="img">
+            <p class="para">Description of Project 1. This project involves...</p>
+        </div>
+        <div>
+            <h3 class="heading">Project 2</h3>
+            <img src="/api/placeholder/400/300" alt="Project 2" class="img">
+            <p class="para">Description of Project 2. This project focuses on...</p>
+        </div>
+        <div>
+            <h3 class="heading" class="img">Project 3</h3>
+            <img src="/api/placeholder/400/300" alt="Project 3">
+            <p class="para">Description of Project 3. This project showcases...</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+  <h2 id="lastHead">Contact Me</h2>
+  <form>
+      <label for="name">Name:</label>
+      <input type="text"  name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea name="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+  </form>
+</section>
+  
+</body>
+</html>

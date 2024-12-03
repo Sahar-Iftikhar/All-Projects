@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.header{
+  text-align: center;
+  background-color: pink;
+  padding: 30px;
+  font-size: 30px;
+}
+.navbar{
+  background-color: rgb(209, 84, 163);
+  padding: 10px;
+  text-align: center;
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+.navbar a:hover{
+  background-color: rgb(103, 51, 83);
+}
+ .navbar a.right{
+  float: right;
+}
+#home{
+  margin: 20px;
+}
+#home h1 {
+  font-size: 24px; 
+  font-weight: bold; 
+} 
+#home p {
+  padding-top: 8px;
+} 
+ #home h3 {
+  font-size: 20px;
+  padding-top: 16px;
+} 
+#home ul {
+  list-style-type: disc; 
+  margin-left: 20px; 
+}
+#home ul li a {
+  color: #3182ce;
+  text-decoration: none; 
+}
+#home ul li a:hover {
+  text-decoration: underline; /* Underline links on hover */
+  background-color: rgb(147, 166, 187);
+}
+#projects {
+  padding: 32px; 
+}
+.headings {
+  font-size: 24px;
+  font-weight: bold; 
+  margin-bottom: 16px; /* Margin below the heading */
+}
+/* Flexbox layout for projects */
+#projects .flex {
+  display: flex;
+  flex-direction: row; 
+  gap: 16px;
+}
+#projects .flex > div {
+  background-color: white; /* Background color of project cards */
+  padding: 16px; /* Equivalent to p-4 in Tailwind */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(56, 51, 51, 0.1); /* Shadow effect */
+}
+.heading{
+  font-weight: bold;
+  margin-bottom: 16px; 
+}
+
+ .img {
+  width: 100%; /* Full width of the container */
+  height: 8rem; /* Fixed height */
+  object-fit: cover; /* Cover the area of the container */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 8px; /* Margin above the image */
+}
+.para {
+  margin-top: 80px;
+}
+#contact {
+  padding: 40px; /* Equivalent to p-8 */
+}
+
+#lastHead{
+  font-size: 32px;
+  font-weight: bold; 
+}
+label {
+  display: block; 
+  margin-bottom: 8px; 
+}
+input, textarea {
+  border: 1px solid #ccc; 
+  padding: 8px; 
+  width: 100%; 
+}
+button {
+  background-color: #2b6cb0; 
+  color: white;
+  padding: 8px 16px; 
+  margin-top: 16px;
+  border-radius: 34px; 
+  cursor: pointer;
+  font-size: 20px;
+}
+button:hover {
+  background-color: #2b6cb0; 
+}
+

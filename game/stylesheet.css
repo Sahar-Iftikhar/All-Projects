@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body{
+  background-color: #d5ddeb;
+}
+h1{
+  background-color: #081b31;
+  color: #fff;
+  height: 5rem;
+   line-height: 5rem; /* jitni height hai utni line height ain do text center main a jay ga */
+}
+.choice{
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color:#f7faff;  /* Soft background color */  
+}
+.choice:hover{
+ /* opacity: 0.5;    for blur the image */
+ cursor: pointer;
+ background-color: #081b31;
+}
+img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.choices{
+  gap: 3rem;
+  display: flex;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+.score-board{
+  gap: 5rem;
+  display: flex;
+  font-size: 2rem;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+#user-score , #comp-score{
+  font-size: 4rem;
+  /* color: rgb(146, 44, 131);
+  background: content-box radial-gradient(rgb(148, 58, 222), rgb(188, 161, 218)); */
+}
+/* i did it by my own */
+.head{
+  color: #c27c3a;
+}
+.head:hover{
+  font-size: 150%;
+  text-decoration: overline;
+  background-color: #e3df02;
+  transition: all 0.3s; /* Smooth transition */
+}
+.msg-container{
+  margin-top: 5rem;
+}
+#msg{
+  background-color: #081b31;
+  color: #fff;
+  display: inline;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}

@@ -1,0 +1,32 @@
+<!-- 3. Implement a responsive design for a webpage that adjusts to different screen sizes. Use media queries to adjust the layout for mobile, tablet, and desktop views -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    #box{
+background-color: bisque;
+height: 100px;
+width: 100px;
+}
+@media (max-width: 768px) {
+  div {
+  padding: 10px;
+  font-size: 14px;
+ } 
+}
+ @media (max-width: 480px) {
+ div {
+  padding: 40px;
+  font-size: 12px;
+  }
+ } 
+  </style>
+  <link rel="stylesheet" href="q3.css">
+</head>
+<body>
+    <div id="box">This is a box</div>
+</body>
+</html> 

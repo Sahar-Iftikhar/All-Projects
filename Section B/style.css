@@ -1,0 +1,47 @@
+body {  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  justify-content: center;  
+  height: 100vh;  
+  background: linear-gradient(45deg, #f0f8ff, #e0ffff);  
+  font-family: 'Arial', sans-serif;  
+  margin: 0;  
+}  
+
+#myDiv {  
+  width: 300px;  
+  height: 150px;  
+  background: linear-gradient(135deg, #87cefa, #4682b4);  
+  border: 2px solid #00008b;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  font-size: 24px;  
+  color: black;  
+  border-radius: 15px;  
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);  
+  transition: all 0.3s ease; 
+}  
+
+#myButton {  
+  margin-top: 20px;  
+  padding: 12px 24px;  
+  font-size: 18px;  
+  cursor: pointer;  
+  border: none;  
+  border-radius: 25px;  
+  background: #4682b4;  
+  color: black;  
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  
+  transition: background 0.3s ease, transform 0.2s ease;  
+}  
+
+#myButton:hover {  
+  background: #1e90ff; 
+  transform: scale(1.05); 
+}  
+
+#myButton:active {  
+  transform: scale(0.95); 
+}  

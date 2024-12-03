@@ -1,0 +1,44 @@
+<!-- Design a webpage with a two-column layout where the left column is 30% width and the right column is 70% width. Use CSS Flexbox or Grid to achieve this layout  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .box{
+  display: flex;
+  flex: content;
+}
+#first{
+padding: 20px;
+background-color: rgb(48, 168, 207);
+width: 30%;
+text-align: center;
+}
+#second{
+background-color: rgb(128, 199, 223);
+width: 60%;
+padding: 20px;
+text-align: center;
+}
+h1{
+  text-align: center;
+}
+</style>
+<body>
+  <h1>Two Equal Columns</h1>
+  <div class="box">
+    
+    <div id="first">
+      <h2>Left Column</h2>
+      <p>This is the left column, taking up 30% of the width.</p>
+    </div>
+    <div id="second">
+      <h2>Right Column</h2>
+      <p>This is the right column, taking up 70% of the width.</p>
+    </div>  
+  </div>
+</body>
+</html>

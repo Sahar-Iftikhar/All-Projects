@@ -1,0 +1,139 @@
+ /* Common styles */  
+ body {  
+  font-family: 'Arial', sans-serif;  
+  background-color: #e8e0eb;  
+  padding: 0;  
+  margin: 20px;  
+  transition: background-color 0.5s ease, color 0.5s ease;  
+  color: #333;  
+}  
+
+h1 {  
+  text-align: center;  
+  color: #6b2272; /* Changed heading color to match theme */  
+}  
+
+form {  
+  border: 2px solid #830e64;   
+  max-width: 600px;  
+  margin: auto;  
+  /* background-color: #ffffff;   */
+  border-radius: 8px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+  padding: 20px;  
+}  
+
+label {  
+  display: block;  
+  margin-top: 10px;  
+  color: #212121;  
+}  
+
+fieldset {  
+  border: 2px solid #830e64;  
+  border-radius: 8px;  
+  padding: 20px;  
+  margin: 20px 0;  
+  background-color: #f5f5f5;  
+}  
+
+legend {  
+  font-weight: bold;  
+  text-align: center;  
+  color: #212121;  
+}  
+
+input, textarea {  
+  width: calc(100% - 22px);  
+  padding: 10px;  
+  border: 1px solid #830e64;  
+  border-radius: 4px;  
+  box-sizing: border-box;  
+}  
+
+.profilePicture{
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #830e64;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+  border-radius: 500%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+button {  
+  display: block;  
+  width: 100%;  
+  background-color: #6b2272;  
+  color: white;  
+  padding: 10px;  
+  border: none;  
+  border-radius: 4px;  
+  cursor: pointer;  
+  margin-top: 20px;  
+  font-weight: bold;  
+  font-size: 18px;  
+  font-family: 'Times New Roman', Times, serif;  
+  box-sizing: border-box; 
+}  
+
+button:hover {  
+  background-color: #9f6891;   
+}  
+
+#resumeOutput {  
+  max-width: 600px;  
+  margin: auto;  
+  padding: 20px;  
+  border: 2px solid #830e64;  
+  border-radius: 8px;  
+  background-color: #f5f5f5;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  
+}  
+
+#resumeOutput h2 {  
+  color: #6b2272;  
+}  
+
+/* Dark mode styles */  
+body.dark {  
+  background-color: #121212;   
+  color: #e0e0e0;   
+}  
+
+form.dark {  
+  /* background-color: #1e1e1e;    */
+  border-color: #bb86fc;   
+}  
+
+fieldset.dark {  
+  background-color: #2c2c2c;   
+}  
+
+legend.dark {  
+  color: white;   
+}  
+
+label.dark {  
+  color: white;   
+}  
+
+#resumeOutput.dark {  
+  background-color: #1e1e1e;   
+  border-color: #bb86fc;   
+}  
+
+button.dark {  
+  background-color: #bb86fc;   
+}  
+
+button.dark:hover {  
+  background-color: #3700b3;   
+}  
+
+input.dark, textarea.dark {  
+  background-color: #2c2c2c;   
+  color: white;   
+  border: 1px solid #bb86fc;   
+}  

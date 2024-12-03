@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="myDiv">This is my div</div>  
+  <button id="myButton" onclick="changeStyles()">Clicked Me!</button>
+  
+   <script>
+    function changeStyles() {  
+
+const myDiv = document.getElementById('myDiv');  
+const myButton = document.getElementById('myButton');  
+
+// This is used to Change styles of the div  
+myDiv.style.background = 'linear-gradient(135deg, #98fb98, #006400)';  
+myDiv.style.color = '#ffffff';  
+myDiv.style.border = '5px solid #008000';  
+myDiv.innerHTML = 'Styles Changed!';  //this one is extra
+
+// And This one is Change styles of the button  
+myButton.style.background = '#006400';  
+myButton.style.border = '5px solid lightgreen'; 
+myButton.style.color = '#fff';  
+myButton.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.4)';  
+myButton.innerHTML = 'Clicked!';  
+}   
+   </script>
+</body>
+</html>

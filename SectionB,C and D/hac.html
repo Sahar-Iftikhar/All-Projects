@@ -1,0 +1,146 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Inventory Management System</title>  
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">  
+    <style>  
+        body {  
+            background-color: #f8fafb; /* Light gray background */  
+        }  
+        header {  
+            background-color: #2563eb; /* Blue background */  
+            text-align: center;  
+            padding: 1rem;  
+            color: #ffffff;  
+        }  
+        table {  
+            width: 100%;  
+            border-collapse: collapse;  
+            margin-top: 20px;  
+        }  
+        th, td {  
+            border: 1px solid #d1d5db; /* Light gray border */  
+            padding: 0.75rem;  
+            text-align: left;  
+        }  
+        th {  
+            background-color: #e3f2fd; /* Light blue background for header */  
+        }  
+        tr:nth-child(even) {  
+            background-color: #f1f5f9; /* Light gray for even rows */  
+        }  
+        footer {  
+            background-color: #1f2937; /* Dark gray background */  
+            text-align: center;  
+            padding: 0.5rem;  
+            color: #ffffff;  
+            font-size: 0.875rem; /* Smaller text */  
+        }  
+        .input-group {  
+            margin-top: 20px;  
+            display: flex;  
+            justify-content: center;  
+        }  
+        .input-group input {  
+            margin-right: 10px;  
+            padding: 0.5rem;  
+            border: 1px solid #d1d5db;  
+            border-radius: 4px;  
+        }  
+        .input-group button {  
+            padding: 0.5rem 1rem;  
+            background-color: #2563eb;  
+            color: white;  
+            border: none;  
+            border-radius: 4px;  
+            cursor: pointer;  
+        }  
+        .input-group button:hover {  
+            background-color: #1d4ed8; /* Darker blue on hover */  
+        }  
+    </style>  
+</head>  
+<body>  
+    <header>  
+        <h1 class="text-xl font-bold">Inventory Management System</h1>  
+    </header>  
+    <main class="p-4">  
+        <table id="productTable">  
+            <thead>  
+                <tr>  
+                    <th>Product Name</th>  
+                    <th>Quantity</th>  
+                    <th>Price</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+            </tbody>  
+        </table>  
+        <div class="input-group">  
+            <input type="text" id="productName" placeholder="Product Name" required />  
+            <input type="number" id="productQuantity" placeholder="Quantity" required />  
+            <input type="number" id="productPrice" placeholder="Price" required />  
+            <button id="addProductButton">Add Product</button>  
+        </div>  
+    </main>  
+    <footer>  
+        <p>Created by [Your Name]</p>  
+    </footer>  
+    <script>  
+        const products = [  
+            { name: "Sample Product 1", quantity: 10, price: 20.00 },  
+            { name: "Sample Product 2", quantity: 5, price: 15.00 },  
+            { name: "Sample Product 3", quantity: 8, price: 25.00 }  
+        ];  
+
+        const productTableBody = document.querySelector("#productTable tbody");  
+        const productNameInput = document.getElementById("productName");  
+        const productQuantityInput = document.getElementById("productQuantity");  
+        const productPriceInput = document.getElementById("productPrice");  
+        const addProductButton = document.getElementById("addProductButton");  
+
+        products.forEach(product => {  
+            addProductToTable(product);  
+        });  
+
+        addProductButton.addEventListener("click", () => {  
+            const name = productNameInput.value.trim();  
+            const quantity = parseInt(productQuantityInput.value);  
+            const price = parseFloat(productPriceInput.value);  
+
+            // Validate inputs  
+            if (!name) {  
+                alert("Product name cannot be empty.");  
+                return;  
+            }  
+            if (isNaN(quantity) || quantity <= 0) {  
+                alert("Quantity must be a positive number.");  
+                return;  
+            }  
+            if (isNaN(price) || price < 0) {  
+                alert("Price must be a valid number.");  
+                return;  
+            }  
+            
+            const newProduct = { name, quantity, price };  
+            products.push(newProduct);  
+            addProductToTable(newProduct);  
+            productNameInput.value = '';  
+            productQuantityInput.value = '';  
+            productPriceInput.value = '';  
+        });  
+
+        function addProductToTable(product) {  
+            const row = document.createElement("tr");  
+            row.innerHTML = `  
+                <td>${product.name}</td>  
+                <td>${product.quantity}</td>  
+                <td>$${product.price.toFixed(2)}</td>  
+            `;  
+            productTableBody.appendChild(row);  
+        }  
+    </script>  
+</body>  
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Editable Resume</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+  <body class="light">  
+    <h1>Editable Resume Builder By Sahar</h1>  
+    <button id="modeToggle">🌙 Switch to Dark Mode</button>  
+    <form id="resumeForm">  
+        <fieldset>  
+            <legend>Personal Information</legend>  
+            <label for="name">Name: </label>  
+            <input type="text" id="name" name="name" placeholder="Sahar-Iftikhar"><br><br>  
+
+            <label for="email">Email: </label>  
+            <input type="email" id="email" name="email" placeholder="sahariftikhar341@example.com" required><br><br>  
+
+            <label for="phone">Phone: </label>  
+            <input type="tel" id="phone" name="phone" placeholder="(1234) 4567890" required><br>  
+
+            <label for="certificate">Certificate: </label>  
+            <input type="certificate" id="certificate" name="certificate" placeholder=" e.g.,Adv.Web Development (NAVTTAC) from karachi uni., java from Coursera , python from the GreatLearning" required><br> 
+
+            <label for="address">Address: </label>  
+            <input type="address" id="address" name="address" placeholder=" e.g.,66/A Sindhi Muslim Society co-orporation (S.M.C.H.S), Karachi" required><br> 
+
+              <!-- Profile picture -->
+        <label for="profile-pic">Profile Picture: </label>  
+        <input type="file" id="profile-pic" name="profile-pic" accept="image/*" required><br> 
+        </fieldset> 
+
+        <fieldset>  
+            <legend>Qualification:</legend>  
+            <label for="qualification">Education: </label>  
+            <textarea id="qualification" name="qualification" rows="4"  placeholder="e.g., Bachelor of Science in Computer Science, XYZ University, 2022" required></textarea>  
+        </fieldset>  
+        <fieldset>  
+            <legend>Experience</legend>  
+            <label for="experience">Experience: </label>  
+            <textarea id="experience" name="experience" rows="4"  placeholder="e.g., Software Developer at ABC Corp, 2021 - Present" required></textarea>  
+        </fieldset>  
+        <fieldset>  
+            <legend>Skills</legend>  
+            <label for="skills">Skills: </label>  
+            <textarea id="skills" name="skills" rows="4"  placeholder="e.g., JavaScript, TypeScript, HTML, CSS" required></textarea>  
+        </fieldset><br>  
+        <button type="submit">Generate Resume Below</button>  
+    </form>  
+
+    <div id="resumeOutput"></div>  
+
+  <script src="script.js"></script>
+</body>
+</html>

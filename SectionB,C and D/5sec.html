@@ -1,0 +1,40 @@
+<!-- Write a CSS rule to create a hover effect for buttons that changes their background color and adds a shadow when hovered over -->
+
+<!-- box-shadow: Adds a shadow effect to the button on hover. The shadow is positioned 0 pixels horizontally, 4 pixels vertically, with an 8-pixel blur radius, and a semi-transparent color. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hover</title>
+  <style>
+    .container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+   /* height: 100vh; Full viewport height */
+}
+    button{
+      text-align: center;
+      background-color: #007bff;
+      color: #fff;
+      border: 3px dotted yellowgreen;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-size: 60px;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    button:hover{
+      background-color: #0056b3;
+      box-shadow: 10px 5px 8px magenta;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <button>Click Me !</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!-- Create an HTML table with at least 3 rows and 3 columns. Style the table using CSS to include alternating row colors and a border -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <style>
+    h1{
+      text-align: center;
+    }
+    table{
+      border-collapse: collapse;
+      width: 100%;
+      margin: 50px auto;
+    }
+    td,th{
+      text-align: left;
+      padding: 10px;
+    }
+    tr:nth-child(even){
+      background-color: yellowgreen;
+    } 
+     /* tr:nth-child(odd){
+      background-color: lightgreen;
+    } */
+  </style>
+</head>
+<body>
+  <h1>This Is A Table</h1>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Salary</th>
+    </tr>
+
+    <tr>
+      <td>Salar</td>
+      <td>Web Develp</td>
+      <td>1,00,000</td>
+    </tr>
+
+    <tr>
+      <td>Aima</td>
+      <td>Mobile App</td>
+      <td>8,00,00</td>
+    </tr>
+
+    <tr>
+      <td>Imama</td>
+      <td>Full Stack</td>
+      <td>7,00,00</td>
+    </tr>
+    <tr>
+      <td>Ayesha</td>
+      <td>Basic</td>
+      <td>5,00,00</td>
+    </tr>
+    <tr>
+      <td>Yaqub</td>
+      <td>Python</td>
+      <td>4,00,00</td>
+    </tr>
+  </table>
+</body>
+</html>
