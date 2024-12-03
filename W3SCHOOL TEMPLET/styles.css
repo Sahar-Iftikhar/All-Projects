@@ -1,0 +1,304 @@
+ * {  
+  /* box-sizing: border-box;   */
+  margin: 0;  
+  padding: 0; 
+  list-style: none; 
+  text-decoration: none;
+}  
+
+body {  
+  font-family: 'Arial', sans-serif; 
+} 
+.sideBar{
+  background-color: #042331;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+}
+.sideBar h1{
+  font-size: 22px;
+  color: white;
+  background-color: #063146;
+  line-height: 40px;
+  user-select: none;
+  padding-left: 20px;
+}
+.sideBar h1 i {
+  padding: 10px;
+}
+.sideBar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solig rgba(225,225,225,.1);
+  border-bottom: 1px solid black;
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+  background-color: rgb(126, 178, 210);
+  border-radius: 10px;
+}
+.sideBar ul a i{
+  margin-right: 16px;
+}
+.conatiner h1 {
+  padding-left: 25%;
+  font-size: 70px;
+}
+.conatiner h2{
+  padding-left: 25%;
+  font-size: 50px;
+  color: red;
+} 
+.conatiner hr{
+  border-radius: 20px;
+  border: 5px solid red;
+  width: 45px;
+  margin-top: 20px; /* Space above the hr */ 
+  margin-left: 25%;
+}
+.containers {  
+  display: flex; /* Use flexbox for layout */  
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */  
+  width: 100%; /* Prevent exceeding width */ 
+  margin-left: 25%;
+}  
+    .box {  
+      width: 490px; /* Same width for all boxes */  
+      height: 390px; /* Same height for all boxes */  
+      border-radius: 60px;  
+      /* background-color: pink; */
+      background-repeat: no-repeat; 
+      background-position: center; /* Adjusts positioning */  
+      background-size: cover;   
+      margin: 10px; /* Margin around each box */  
+    } 
+.box1 { background-image: url(images/livingroom2.jpg); }  
+.box2 { background-image: url(images/atrium.jpg); }  
+.box3 { background-image: url(images/bedroom.jpg); }  
+.box4 { background-image: url(images/kitchenconcrete.jpg); }  
+.box5 { background-image: url(images/diningroom.jpg); }
+.box6 { background-image: url(images/livingroom.jpg); }
+.service{
+  margin-top: 75px;
+  padding-left: 28%;
+}
+ .service h1{
+  color: red;
+  font-size: 70px;
+ }
+ .service p{
+  font-size: 20px;
+ }
+.service hr{
+  border-radius: 20px;
+  border: 5px solid red;
+  width: 80px;
+  margin-top: 15px; /* Space above the hr */ 
+  margin-bottom: 10px;
+}
+.designers{
+  margin-top: 75px;
+  padding-left: 28%;
+}
+.designers h1{
+  color: red;
+  font-size: 70px;
+}
+.designers p{
+  font-size: 20px;
+}
+.designers hr {
+  border-radius: 20px;
+  border: 5px solid red;
+  width: 80px;
+  margin-top: 15px; /* Space above the hr */ 
+  margin-bottom: 10px;
+}
+.team-section {  
+  margin-left: 26%;
+  display: flex;  
+  justify-content: space-between;  
+  padding: 20px;  
+  background-color: #f2f2f2; /* Light background color */  
+}  
+.team-member {  
+  flex: 1; /* Each member takes up equal space */  
+  margin: 0 10px; /* Space between members */  
+}  
+.team-member-content {  
+  background-color: #e0e0e0; /* Light grey background */  
+  border-radius: 5px;  
+  overflow: hidden; /* Ensure rounded corners and hide overflow */  
+}  
+
+.team-member img {  
+  width: 100%; /* Full width of the parent */  
+  height: auto; /* Maintain aspect ratio */  
+} 
+.member-info {  
+  padding: 15px;  
+}  
+.packages{
+  margin-top: 75px;
+  padding-left: 28%;
+}
+.packages h1{
+  color: red;
+  font-size: 70px;
+}
+.packages hr{
+  border-radius: 20px;
+  border: 5px solid red;
+  width: 80px;
+  margin-top: 15px; /* Space above the hr */ 
+  margin-bottom: 10px;
+}
+.packages p{
+  font-size: 20px;
+}
+.pricing-section{
+  margin-left: 20%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border: 0.5px solid black; /* optional */
+}
+.pricing-column{
+  flex: 1; /* Each column takes up equal space */ 
+  margin: 10px;
+}
+.pricing-list{
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+.pricing-header {  
+  background-color: #333; /* Dark grey for header */  
+  color: white;  
+  font-size: 1.5rem;  
+  padding: 20px;  
+}  
+
+.pricing-item {  
+  padding: 16px;  
+}  
+
+.pricing-price {  
+  padding: 16px;  
+}  
+.price-label {  
+  opacity: 0.7; /* Lower opacity for the label */  
+}  
+.signup-button {  
+  padding: 15px 30px;  
+  font-size: 1rem;  
+  color: #333;  
+  background-color: white; /* White background */  
+  border: 3px solid black;  /* none */ 
+  border-radius: 5px;  
+  cursor: pointer;  
+  transition: background-color 0.3s;  
+}  
+.signup-button:hover {  
+  background-color: #333; /* Dark background on hover */  
+  color: white; /* White text on hover */  
+}  
+.pro {  
+  background-color: #e53935; /* Red background for Pro header */  
+}  
+
+.pro-button {  
+  background-color: #e53935; /* Red background */  
+  color: white; /* White text */  
+}  
+
+.pro-button:hover {  
+  background-color: #b71c1c; /* Darker red on hover */  
+}
+.contact-container {
+  padding-left: 22%;
+  margin-top: 75px;
+  background-color: #f9f9f9;
+}
+.contact-title {  
+  font-size: 2.5rem;  
+  color: red;  
+  font-weight: bold;  
+} 
+.contact-container  hr{
+  border-radius: 20px;
+  border: 5px solid red;
+  width: 80px;
+  margin-top: 15px; /* Space above the hr */ 
+  margin-bottom: 10px; 
+} 
+.contact-container p {  
+  margin: 15px 0;  
+}  
+
+.contact-form {  
+  max-width: 600px;  
+  margin: auto;  
+}  
+.form-section {  
+  margin-bottom: 15px;  
+}  
+.form-section label {  
+  display: block;  
+  margin-bottom: 5px;  
+  font-weight: bold;  
+}  
+.form-input {  
+  width: 100%;  
+  padding: 10px;  
+  border: 1px solid #ccc;  
+  border-radius: 4px;  
+  box-sizing: border-box;  
+}  
+/* .form-input:focus {  
+  border-color: red;  
+}   */
+.submit-button {  
+  width: 100%;  
+  padding: 15px;  
+  background-color: red;  
+  color: white;  
+  border: none;  
+  border-radius: 4px;  
+  cursor: pointer;  
+  font-size: 1rem;  
+}  
+
+.submit-button:hover {  
+  background-color: darkred;  
+}  
+.footer {  
+  background-color: #f2f2f2;  
+  padding: 32px;  
+  text-align: right;  
+}  
+
+.footer-text {  
+  margin: 0;  
+}  
+
+.footer-link {  
+  color: red;  
+  text-decoration: none;  
+}  
+
+.footer-link:hover {  
+  text-decoration: underline;  
+}
